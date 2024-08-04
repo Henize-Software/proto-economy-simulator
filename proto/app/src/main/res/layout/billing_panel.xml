@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/topgraphic">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView40"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Proto on the single-player mobile platform will always be free to use and all features will remain unlocked. If you like Proto please consider purchasing Proto Coins. You can also watch a 30 second video for free points."
+            android:textColor="@android:color/white" />
+
+        <TextView
+            android:id="@+id/textCoinCount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Coin Bal:"
+            android:textColor="@android:color/white"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textPoints"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Support Points :"
+            android:textColor="@android:color/white" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnWatchVid"
+                android:layout_width="100dp"
+                android:layout_height="60dp"
+                android:layout_weight="1"
+                android:background="@drawable/topgraphic"
+                android:text="WATCH VIDEO" />
+
+            <Button
+                android:id="@+id/btnBuyProtoCoin"
+                android:layout_width="100dp"
+                android:layout_height="60dp"
+                android:layout_weight="1"
+                android:background="@drawable/listitem"
+                android:text="Buy Proto Coin" />
+        </LinearLayout>
+
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>

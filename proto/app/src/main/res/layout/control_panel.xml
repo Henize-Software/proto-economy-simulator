@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/circuit_background_alpha"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView23"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Load Map"
+            android:textSize="24sp" />
+
+        <Button
+            android:id="@+id/buttonClassic"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="CLASSIC" />
+
+        <Button
+            android:id="@+id/buttonBig"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="BIG ECONOMY" />
+
+        <Button
+            android:id="@+id/buttonBig2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="BIG ECONOMY II" />
+
+        <TextView
+            android:id="@+id/textView22"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Loading may take a second" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="24dp" />
+
+        <TextView
+            android:id="@+id/textView24"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Support Development"
+            android:textSize="24sp"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/textView25"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Watch a 30 second ad video to support development of Proto."
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/buttonSupport"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Support"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/textView26"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Support Points (non-redemable): 0"
+            android:visibility="gone" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="64dp" />
+
+        <TextView
+            android:id="@+id/textView27"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="This will not clear your support point balance."
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/buttonViewBoot"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="VIEW BOOTLOADER LOG"
+            android:visibility="gone" />
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

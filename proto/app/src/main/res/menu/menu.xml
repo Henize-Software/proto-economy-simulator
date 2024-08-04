@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/scale_text_item"
+        android:title="Scale Edit Box"
+        app:actionLayout="@layout/scale_text_box_item"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/app_bar_switch_item"
+        android:title="Switch"
+        app:actionLayout="@layout/switch_item"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/speed_item"
+        android:checkable="true"
+        android:enabled="false"
+        android:title="@string/SPEEDOFF"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/play_pause_item"
+        android:icon="@android:drawable/ic_media_play"
+        android:title="Play/Pause"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/map_item"
+        android:checkable="false"
+        android:icon="@android:drawable/ic_input_get"
+        android:title="@string/mmap" />
+    <item
+        android:id="@+id/graph_item"
+        android:icon="@android:drawable/button_onoff_indicator_on"
+        android:title="@string/graph" />
+    <item
+        android:id="@+id/trader_item"
+        android:icon="@android:drawable/ic_menu_agenda"
+        android:title="@string/trade" />
+    <item
+        android:id="@+id/special_order_item"
+        android:title="Special Ordering" />
+    <item
+        android:id="@+id/currency_item"
+        android:icon="@android:drawable/btn_star_big_on"
+        android:title="@string/currency" />
+    <item
+        android:id="@+id/bank_item"
+        android:title="Banking" />
+    <item
+        android:id="@+id/advanced_stats_item"
+        android:title="@string/stats"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/super_stats_item"
+        android:title="Super Stats" />
+    <item
+        android:id="@+id/controlItem"
+        android:title="Control">
+        <menu>
+            <item
+                android:id="@+id/fullScreen"
+                android:checkable="true"
+                android:title="@string/fullScreen"></item>
+            <item
+                android:id="@+id/priceModel"
+                android:checkable="true"
+                android:title="@string/menuPrices"></item>
+            <item
+                android:id="@+id/control_item"
+                android:title="Economies" />
+            <item
+                android:id="@+id/log_item"
+                android:title="System Log" />
+            <item
+                android:id="@+id/state_item"
+                android:title="Save/Load State" />
+        </menu>
+    </item>
+    <item
+        android:id="@+id/info_item"
+        android:title="@string/iinfo" />
+    <item
+        android:id="@+id/howto_item"
+        android:title="How To..." />
+    <item
+        android:id="@+id/reset_item"
+        android:title="@string/reset" />
+    <item
+        android:id="@+id/unlock_item"
+        android:title="@string/unlock"
+        android:visible="false" />
+</menu>
