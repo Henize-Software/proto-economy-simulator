@@ -39,7 +39,7 @@ public class Commodity {
            v.size() != inputs.size()) {
             //check for multipliers.
             var remaining = inputs.stream()
-                .map(c -> c.type) // Assuming Commodity has a getType() method
+                .map(c -> c.type) 
                 .filter(t -> !v.contains(t))
                 .collect(Collectors.toList());
  
