@@ -26,7 +26,7 @@ public class Commodity {
                           HashMap<String, /*inputs*/
          /*multiplier  */ Map.Entry<String, Integer>>> types = new HashMap<>();
     
-    private static int mult; //calculated multiplier
+    private static int mult = 1; //calculated multiplier
 
     public static List<Commodity> generate(String type, List<Commodity> inputs) {
         var requiredInputs = types.get(type);
