@@ -26,7 +26,7 @@ public class Commodity {
                           HashMap<String, /*inputs*/
          /*multiplier  */ Map.Entry<String, Integer>>> types = new HashMap<>();
     
-    private static int mult = 1; //calculated multiplier
+    private static int mult; //calculated multiplier
 
     public static List<Commodity> generate(String type, List<Commodity> inputs) {
         var requiredInputs = types.get(type);
@@ -38,16 +38,15 @@ public class Commodity {
         if(v.size() != requiredInputs.size() ||
            v.size() != inputs.size()) {
             //check for multipliers.
-            ArrayList<String> remaining = new ArrayList();
-            for (Commodity c : inputs) {
-                if(v.contains(c.type)) continue;
-                remaining.add(c.type);                
-            }
-
+            var remaining = inputs.stream()
+                .map(c -> c.type) // Assuming Commodity has a getType() method
+                .filter(t -> !v.contains(t))
+                .collect(Collectors.toCollection(ArrayList::new));
+ 
             for (String t : remaining) {
                 var multiplier = requiredInputs.values().stream()
                                  .filter(entry -> entry.getKey().equals(t))
-                                 .map(Map.Entry::getValue)
+                                 .map(Map.Entry::getValue) 
                                  .findFirst();
                 mult += multiplier.orElseThrow();
             }
