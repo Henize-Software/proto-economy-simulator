@@ -41,7 +41,7 @@ public class Commodity {
             var remaining = inputs.stream()
                 .map(c -> c.type) // Assuming Commodity has a getType() method
                 .filter(t -> !v.contains(t))
-                .collect(Collectors.toCollection(ArrayList::new));
+                .collect(Collectors.toList());
  
             for (String t : remaining) {
                 var multiplier = requiredInputs.values().stream()
