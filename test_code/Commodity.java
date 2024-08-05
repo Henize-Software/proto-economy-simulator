@@ -32,7 +32,7 @@ public class Commodity {
         var requiredInputs = types.get(type);
         
         var v = inputs.stream()
-            .map(Commodity->type)
+            .map(c -> c.type)
             .filter(requiredInputs::containsKey)
             .collect(Collectors.toList());
         if(v.size() != requiredInputs.size() ||
